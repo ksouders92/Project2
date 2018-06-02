@@ -12,7 +12,7 @@ router.get("/", function (req, res) {
 
 
 
-router.post("/burgers/create", function (req, res) {
+router.post("/create/favorites", function (req, res) {
     
     });
 

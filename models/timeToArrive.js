@@ -1,4 +1,4 @@
-var orm = require('../config/orm.js');
+var orm = require('../config/create.js');
 
 var arrivalTime = {
     all: function(cb){
@@ -8,4 +8,4 @@ var arrivalTime = {
     }
 };
 
-module.exports = timeToArrive;
+module.exports = arrivalTime;
