@@ -1,242 +1,56 @@
-INSERT INTO airport_codedata(airport_location, airport_code, checkin_us, checkin_international)
+-- MySQL dump 10.13  Distrib 5.7.17, for Win64 (x86_64)
+--
+-- Host: 127.0.0.1    Database: airport_db
+-- ------------------------------------------------------
+-- Server version	8.0.11
 
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
-Values("Alabama","AL"}
-("Birmingham International Airport",BHM,"2hours","3 hours" )
-Dothan Regional Airport,DHN,"2hours","3 hours" )
-Huntsville International Airport,HSV,"2hours","3 hours" )
-Mobile,MOB,"2hours","3 hours" )
-Montgomery,MGM,"2hours","3 hours" )
-Alaska,AK,"2hours","3 hours" )
-Anchorage International Airport,ANC,"2hours","3 hours" )
-Fairbanks International Airport,FAI,"2hours","3 hours" )
-Juneau International Airport,JNU,"2hours","3 hours" )
-Arizona,AZ,"2hours","3 hours" )
-Flagstaff,FLG,"2hours","3 hours" )
-"Phoenix,�Phoenix Sky Harbor International Airport",PHX,"2hours","3 hours" )
-Tucson International Airport,TUS,"2hours","3 hours" )
-Yuma International Airport,YUM,"2hours","3 hours" )
-Arkansas,AR,"2hours","3 hours" )
-Fayetteville,FYV,"2hours","3 hours" )
-Little Rock National Airport,LIT,"2hours","3 hours" )
-Northwest Arkansas Regional Airport,XNA,"2hours","3 hours" )
-California,CA,"2hours","3 hours" )
-Burbank,BUR,"2hours","3 hours" )
-Fresno,FAT,"2hours","3 hours" )
-Long Beach,LGB,"2hours","3 hours" )
-Los Angeles International Airport,LAX,"2hours","3 hours" )
-Oakland,OAK,"2hours","3 hours" )
-Ontario,ONT,"2hours","3 hours" )
-Palm Springs,PSP,"2hours","3 hours" )
-Sacramento,SMF,"2hours","3 hours" )
-San Diego,SAN,"2hours","3 hours" )
-San Francisco International Airport,SFO,"2hours","3 hours" )
-San Jose,SJC,"2hours","3 hours" )
-Santa Ana,SNA,"2hours","3 hours" )
-Colorado,CO,"2hours","3 hours" )
-Aspen,ASE,"2hours","3 hours" )
-Colorado Springs,COS,"2hours","3 hours" )
-Denver International Airport,DEN,"2hours","3 hours" )
-Grand Junction,GJT,"2hours","3 hours" )
-Pueblo,PUB,"2hours","3 hours" )
-Connecticut,CT,"2hours","3 hours" )
-Hartford,BDL,"2hours","3 hours" )
-District of Columbia,DC,"2hours","3 hours" )
-"Washington,�Dulles International Airport",IAD,"2hours","3 hours" )
-Washington National Airport,DCA,"2hours","3 hours" )
-Florida,FL,
-Daytona Beach,DAB,"2hours","3 hours" )
-Fort Lauderdale-Hollywood International Airport,FLL,"2hours","3 hours" )
-Fort Meyers,RSW,"2hours","3 hours" )
-Jacksonville,JAX,"2hours","3 hours" )
-Key West International Airport,EYW,"2hours","3 hours" )
-Miami International Airport,MIA,"2hours","3 hours" )
-Orlando,MCO,"2hours","3 hours" )
-Pensacola,PNS,"2hours","3 hours" )
-St. Petersburg,PIE,"2hours","3 hours" )
-Sarasota,SRQ,"2hours","3 hours" )
-Tampa,TPA,"2hours","3 hours" )
-West Palm Beach,PBI,"2hours","3 hours" )
-Panama City-Bay County International Airport,PFN,"2hours","3 hours" )
-Georgia,GA,
-Atlanta Hartsfield International Airport,ATL,"2hours","3 hours" )
-Augusta,AGS,"2hours","3 hours" )
-Savannah,SAV,"2hours","3 hours" )
-Hawaii,HI,"2hours","3 hours" )
-Hilo,ITO,"2hours","3 hours" )
-Honolulu International Airport,HNL,"2hours","3 hours" )
-Kahului,OGG,"2hours","3 hours" )
-Kailua,KOA,"2hours","3 hours" )
-Lihue,LIH,"2hours","3 hours" )
-Idaho,ID,"2hours","3 hours" )
-Boise,BOI,"2hours","3 hours" )
-Illinois,IL,"2hours","3 hours" )
-Chicago Midway Airport,MDW,"2hours","3 hours" )
-"Chicago,�O'Hare International Airport Airport",ORD,"2hours","3 hours" )
-Moline,MLI,"2hours","3 hours" )
-Peoria,PIA,"2hours","3 hours" )
-Indiana,IN,
-Evansville,EVV,"2hours","3 hours" )
-Fort Wayne,FWA,"2hours","3 hours" )
-Indianapolis International Airport,IND,"2hours","3 hours" )
-South Bend,SBN,"2hours","3 hours" )
-Iowa,IA,"2hours","3 hours" )
-Cedar Rapids,CID,"2hours","3 hours" )
-Des Moines,DSM,"2hours","3 hours" )
-Kansas,KS,"2hours","3 hours" )
-Wichita,ICT,"2hours","3 hours" )
-Kentucky,KY,"2hours","3 hours" )
-Lexington,LEX,"2hours","3 hours" )
-Louisville,SDF,"2hours","3 hours" )
-Louisiana,LA,"2hours","3 hours" )
-Baton Rouge,BTR,"2hours","3 hours" )
-New Orleans International Airport,MSY,"2hours","3 hours" )
-Shreveport,SHV,"2hours","3 hours" )
-Maine,ME,"2hours","3 hours" )
-Augusta,AUG,"2hours","3 hours" )
-Bangor,BGR,"2hours","3 hours" )
-Portland,PWM,"2hours","3 hours" )
-Maryland,MD,"2hours","3 hours" )
-Baltimore,BWI,"2hours","3 hours" )
-Massachusetts,MA,"2hours","3 hours" )
-"Boston, Logan International Airport",BOS,"2hours","3 hours" )
-Hyannis,HYA,"2hours","3 hours" )
-Nantucket,ACK,"2hours","3 hours" )
-Worcester,ORH,"2hours","3 hours" )
-Michigan,MI,"2hours","3 hours" )
-Battlecreek,BTL,"2hours","3 hours" )
-Detroit Metropolitan Airport,DTW,"2hours","3 hours" )
-Detroit,DET,"2hours","3 hours" )
-Flint,FNT,"2hours","3 hours" )
-Grand Rapids,GRR,"2hours","3 hours" )
-Kalamazoo-Battle Creek International Airport,AZO,"2hours","3 hours" )
-Lansing,LAN,"2hours","3 hours" )
-Saginaw,MBS,"2hours","3 hours" )
-Minnesota,MN,"2hours","3 hours" )
-Duluth,DLH,"2hours","3 hours" )
-Minneapolis/St.Paul International Airport,MSP,"2hours","3 hours" )
-Rochester,RST,"2hours","3 hours" )
-Mississippi,MS,"2hours","3 hours" )
-Gulfport,GPT,"2hours","3 hours" )
-Jackson,JAN,"2hours","3 hours" )
-Missouri,MO,"2hours","3 hours" )
-Kansas City,MCI,"2hours","3 hours" )
-"St Louis, Lambert International Airport",STL,"2hours","3 hours" )
-Springfield,SGF,"2hours","3 hours" )
-Montana,MT,"2hours","3 hours" )
-Billings,BIL,"2hours","3 hours" )
-Nebraska,NE,"2hours","3 hours" )
-Lincoln,LNK,"2hours","3 hours" )
-Omaha,OMA,"2hours","3 hours" )
-Nevada,NV,"2hours","3 hours" )
-"Las Vegas,�Las Vegas McCarran International Airport",LAS,"2hours","3 hours" )
-Reno-Tahoe International Airport,RNO,"2hours","3 hours" )
-New Hampshire,NH,"2hours","3 hours" )
-Manchester,MHT,"2hours","3 hours" )
-New Jersey,NJ,"2hours","3 hours" )
-Atlantic City International Airport,ACY,"2hours","3 hours" )
-Newark International Airport,EWR,"2hours","3 hours" )
-Trenton,TTN,"2hours","3 hours" )
-New Mexico,NM,
-Albuquerque International Airport,ABQ,"2hours","3 hours" )
-Alamogordo,ALM,"2hours","3 hours" )
-New York,NY
-Albany International Airport,ALB,"2hours","3 hours" )
-Buffalo,BUF,"2 hours","3 hours" )
-Islip,ISP,"2hours","3 hours" )
-"New York,�John F Kennedy International Airport",JFK,"2hours","3 hours" )
-"New York,�La Guardia Airport",LGA,"2hours","3 hours" )
-Newburgh,SWF,"2hours","3 hours" )
-Rochester,ROC,"2hours","3 hours" )
-Syracuse,SYR,"2hours","3 hours" )
-Westchester,HPN,"2hours","3 hours" )
-North Carolina,NC,"2hours","3 hours" )
-Asheville,AVL,"2hours","3 hours" )
-Charlotte/Douglas International Airport,CLT,"2hours","3 hours" )
-Fayetteville,FAY,"2hours","3 hours" )
-Greensboro,GSO,"2hours","3 hours" )
-Raleigh,RDU,"2hours","3 hours" )
-Winston-Salem,INT,"2hours","3 hours" )
-North Dakota,ND,"2hours","3 hours" )
-Bismark,BIS,"2hours","3 hours" )
-Fargo,FAR,"2 hours","3 hours" )
-Ohio,OH,"2hours","3 hours" )
-Akron,CAK,"2hours","3 hours" )
-Cincinnati,CVG,"2hours","3 hours" )
-Cleveland,CLE,"2hours","3 hours" )
-Columbus,CMH,"2hours","3 hours" )
-Dayton,DAY,"2hours","3 hours" )
-Toledo,TOL,"2hours","3 hours" )
-Oklahoma,OK,"2hours","3 hours" )
-Oklahoma City,OKC,"2hours","3 hours" )
-Tulsa,TUL,"2hours","3 hours" )
-Oregon,OR,
-Eugene,EUG
-Portland International Airport,PDX
-"Portland, Hillsboro Airport",HIO
-Salem,SLE
-Pennsylvania,PA
-Allentown,ABE
-Erie,ERI
-Harrisburg,MDT
-Philadelphia,PHL
-Pittsburgh,PIT
-Scranton,AVP
-Rhode Island,RI
-Providence - T.F. Green Airport,PVD
-South Carolina,SC
-Charleston,CHS
-Columbia,CAE
-Greenville,GSP
-Myrtle Beach,MYR
-South Dakota,SD
-Pierre,PIR
-Rapid City,RAP
-Sioux Falls,FSD
-Tennessee,TN
-Bristol,TRI
-Chattanooga,CHA
-Knoxville,TYS
-Memphis,MEM
-Nashville,BNA
-Texas,TX
-Amarillo,AMA
-Austin Bergstrom International Airport,AUS
-Corpus Christi,CRP
-Dallas Love Field Airport,DAL
-Dallas/Fort Worth International Airport,DFW
-El Paso,ELP
-"Houston, William B Hobby Airport",HOU
-"Houston, George Bush Intercontinental Airport",IAH
-Lubbock,LBB
-Midland,MAF
-San Antonio International Airport,SAT
-Utah,UT
-Salt Lake City,SLC
-Vermont,VT
-Burlington,BTV
-Montpelier,MPV
-Rutland,RUT
-Virginia,VA
-Dulles,IAD
-Newport News,PHF
-Norfolk,ORF
-Richmond,RIC
-Roanoke,ROA
-Washington,WA
-"Pasco, Pasco/Tri-Cities Airport",PSC
-"Seattle, Tacoma International Airport",SEA
-Spokane International Airport,GEG
-West Virginia,WV
-Charleston,CRW
-Clarksburg,CKB
-Huntington Tri-State Airport,HTS
-Wisconsin,WI
-Green Bay,GRB
-Madison,MSN
-Milwaukee,MKE
-Wyoming,WY
-Casper,CPR
-Cheyenne,CYS
-Jackson Hole,JAC
-Rock Springs,RKS
+--
+-- Table structure for table `airport`
+--
+
+DROP TABLE IF EXISTS `airport`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `airport` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `st` varchar(45) DEFAULT NULL,
+  `st_abr` varchar(5) DEFAULT NULL,
+  `airport_name` varchar(100) DEFAULT NULL,
+  `IATA` varchar(6) DEFAULT NULL,
+  `pre_dom` varchar(20) DEFAULT NULL,
+  `pre_int` varchar(20) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=191 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `airport`
+--
+
+LOCK TABLES `airport` WRITE;
+/*!40000 ALTER TABLE `airport` DISABLE KEYS */;
+INSERT INTO `airport` VALUES (1,'Alabama','AL','Birmingham International Airport','BHM','2 Hours ','3 Hours'),(2,'Alabama','AL','Dothan Regional Airport','DHN','2 Hours ','3 Hours'),(3,'Alabama','AL','Huntsville International Airport','HSV','2 Hours ','3 Hours'),(4,'Alabama','AL','Mobile','MOB','2 Hours ','3 Hours'),(5,'Alabama','AL','Montgomery','MGM','2 Hours ','3 Hours'),(6,'Alaska','AK','Anchorage International Airport','ANC','2 Hours ','3 Hours'),(7,'Alaska','AK','Fairbanks International Airport','FAI','2 Hours ','3 Hours'),(8,'Alaska','AK','Juneau International Airport','JNU','2 Hours ','3 Hours'),(9,'Arizona','AZ','Flagstaff','FLG','2 Hours ','3 Hours'),(10,'Arizona','AZ','Phoenix,Phoenix Sky Harbor International Airport','PHX','2 Hours ','3 Hours'),(11,'Arizona','AZ','Tucson International Airport','TUS','2 Hours ','3 Hours'),(12,'Arizona','AZ','Yuma International Airport','YUM','2 Hours ','3 Hours'),(13,'Arkansas','AR','Fayetteville','FYV','2 Hours ','3 Hours'),(14,'Arkansas','AR','Little Rock National Airport','LIT','2 Hours ','3 Hours'),(15,'Arkansas','AR','Northwest Arkansas Regional Airport','XNA','2 Hours ','3 Hours'),(16,'California','CA','Burbank','BUR','2 Hours ','3 Hours'),(17,'California','CA','Fresno','FAT','2 Hours ','3 Hours'),(18,'California','CA','Long Beach','LGB','2 Hours ','3 Hours'),(19,'California','CA','Los Angeles International Airport','LAX','2 Hours ','3 Hours'),(20,'California','CA','Oakland','OAK','2 Hours ','3 Hours'),(21,'California','CA','Ontario','ONT','2 Hours ','3 Hours'),(22,'California','CA','Palm Springs','PSP','2 Hours ','3 Hours'),(23,'California','CA','Sacramento','SMF','2 Hours ','3 Hours'),(24,'California','CA','San Diego','SAN','2 Hours ','3 Hours'),(25,'California','CA','San Francisco International Airport','SFO','2 Hours ','3 Hours'),(26,'California','CA','San Jose','SJC','2 Hours ','3 Hours'),(27,'California','CA','Santa Ana','SNA','2 Hours ','3 Hours'),(28,'Colorado','CO','Aspen','ASE','2 Hours ','3 Hours'),(29,'Colorado','CO','Colorado Springs','COS','2 Hours ','3 Hours'),(30,'Colorado','CO','Denver International Airport','DEN','2 Hours ','3 Hours'),(31,'Colorado','CO','Grand Junction','GJT','2 Hours ','3 Hours'),(32,'Colorado','CO','Pueblo','PUB','2 Hours ','3 Hours'),(33,'Connecticut','CT','Hartford','BDL','2 Hours ','3 Hours'),(34,'District of Columbia','D.O.C','Washington,Dulles International Airport','IAD','2 Hours ','3 Hours'),(35,'District of Columbia','D.O.C','Washington National Airport','DCA','2 Hours ','3 Hours'),(36,'Florida ','FL','Daytona Beach','DAB','2 Hours ','3 Hours'),(37,'Florida ','FL','Fort Lauderdale-Hollywood International Airport','FLL','2 Hours ','3 Hours'),(38,'Florida ','FL','Fort Meyers','RSW','2 Hours ','3 Hours'),(39,'Florida ','FL','Jacksonville','JAX','2 Hours ','3 Hours'),(40,'Florida ','FL','Key West International Airport','EYW','2 Hours ','3 Hours'),(41,'Florida ','FL','Miami International Airport','MIA','2 Hours ','3 Hours'),(42,'Florida ','FL','Orlando','MCO','2 Hours ','3 Hours'),(43,'Florida ','FL','Pensacola','PNS','2 Hours ','3 Hours'),(44,'Florida ','FL','St. Petersburg','PIE','2 Hours ','3 Hours'),(45,'Florida ','FL','Sarasota','SRQ','2 Hours ','3 Hours'),(46,'Florida ','FL','Tampa','TPA','2 Hours ','3 Hours'),(47,'Florida ','FL','West Palm Beach','PBI','2 Hours ','3 Hours'),(48,'Florida ','FL','Panama City-Bay County International Airport','PFN','2 Hours ','3 Hours'),(49,'Georgia ','GA','Georgia','GA','2 Hours ','3 Hours'),(50,'Georgia ','GA','Atlanta Hartsfield International Airport','ATL','2 Hours ','3 Hours'),(51,'Georgia ','GA','Augusta','AGS','2 Hours ','3 Hours'),(52,'Georgia ','GA','Savannah','SAV','2 Hours ','3 Hours'),(53,'Hawaii','HI','Hilo','ITO','2 Hours ','3 Hours'),(54,'Hawaii','HI','Honolulu International Airport','HNL','2 Hours ','3 Hours'),(55,'Hawaii','HI','Kahului','OGG','2 Hours ','3 Hours'),(56,'Hawaii','HI','Kailua','KOA','2 Hours ','3 Hours'),(57,'Hawaii','HI','Lihue','LIH','2 Hours ','3 Hours'),(58,'Idaho','ID','Boise','BOI','2 Hours ','3 Hours'),(59,'Illinois','IL','Chicago Midway Airport','MDW','2 Hours ','3 Hours'),(60,'Illinois','IL','Chicago,O\'Hare International Airport Airport','ORD','2 Hours ','3 Hours'),(61,'Illinois','IL','Moline','MLI','2 Hours ','3 Hours'),(62,'Illinois','IL','Peoria','PIA','2 Hours ','3 Hours'),(63,'Indiana','IN','Evansville','EVV','2 Hours ','3 Hours'),(64,'Indiana','IN','Fort Wayne','FWA','2 Hours ','3 Hours'),(65,'Indiana','IN','Indianapolis International Airport','IND','2 Hours ','3 Hours'),(66,'Indiana','IN','South Bend','SBN','2 Hours ','3 Hours'),(67,'Iowa','IA','Cedar Rapids','CID','2 Hours ','3 Hours'),(68,'Kansas','KS','Wichita','ICT','2 Hours ','3 Hours'),(69,'Kentucky','KY','Lexington','LEX','2 Hours ','3 Hours'),(70,'Kentucky','KY','Louisville','SDF','2 Hours ','3 Hours'),(71,'Louisiana','LA','Baton Rouge','BTR','2 Hours ','3 Hours'),(72,'Louisiana','LA','New Orleans International Airport','MSY','2 Hours ','3 Hours'),(73,'Louisiana','LA','Shreveport','SHV','2 Hours ','3 Hours'),(74,'Maine','ME','Augusta','AUG','2 Hours ','3 Hours'),(75,'Maine','ME','Bangor','BGR','2 Hours ','3 Hours'),(76,'Maine','ME','Portland','PWM','2 Hours ','3 Hours'),(77,'Maryland','MD','Baltimore','BWI','2 Hours ','3 Hours'),(78,'Massachusetts','MA','Boston, Logan International Airport','BOS','2 Hours ','3 Hours'),(79,'Massachusetts','MA','Hyannis','HYA','2 Hours ','3 Hours'),(80,'Massachusetts','MA','Nantucket','ACK','2 Hours ','3 Hours'),(81,'Massachusetts','MA','Worcester','ORH','2 Hours ','3 Hours'),(82,'Michigan','MI','Battlecreek','BTL','2 Hours ','3 Hours'),(83,'Michigan','MI','Detroit Metropolitan Airport','DTW','2 Hours ','3 Hours'),(84,'Michigan','MI','Detroit','DET','2 Hours ','3 Hours'),(85,'Michigan','MI','Flint','FNT','2 Hours ','3 Hours'),(86,'Michigan','MI','Grand Rapids','GRR','2 Hours ','3 Hours'),(87,'Michigan','MI','Kalamazoo-Battle Creek International Airport','AZO','2 Hours ','3 Hours'),(88,'Michigan','MI','Lansing','LAN','2 Hours ','3 Hours'),(89,'Michigan','MI','Saginaw','MBS','2 Hours ','3 Hours'),(90,'Minnesota','MN','Duluth','DLH','2 Hours ','3 Hours'),(91,'Minnesota','MN','Minneapolis/St.Paul International Airport','MSP','2 Hours ','3 Hours'),(92,'Minnesota','MN','Rochester','RST','2 Hours ','3 Hours'),(93,'Mississippi','MS','Gulfport','GPT','2 Hours ','3 Hours'),(94,'Mississippi','MS','Jackson','JAN','2 Hours ','3 Hours'),(95,'Missouri','MO','Kansas City','MCI','2 Hours ','3 Hours'),(96,'Missouri','MO','St Louis, Lambert International Airport','STL','2 Hours ','3 Hours'),(97,'Missouri','MO','Springfield','SGF','2 Hours ','3 Hours'),(98,'Missouri','MO','Montana','MT','2 Hours ','3 Hours'),(99,'Missouri','MO','Billings','BIL','2 Hours ','3 Hours'),(100,'Nebraska','NE','Lincoln','LNK','2 Hours ','3 Hours'),(101,'Nebraska','NE','Omaha','OMA','2 Hours ','3 Hours'),(102,'Nevada','NE','Las Vegas,Las Vegas McCarran International Airport','LAS','2 Hours ','3 Hours'),(103,'Nevada','NE','Reno-Tahoe International Airport','RNO','2 Hours ','3 Hours'),(104,'New Hampshire','NH','Manchester','MHT','2 Hours ','3 Hours'),(105,'New Jersey ','NJ','Atlantic City International Airport','ACY','2 Hours ','3 Hours'),(106,'New Jersey ','NJ','Newark International Airport','EWR','2 Hours ','3 Hours'),(107,'New Jersey ','NJ','Trenton','TTN','2 Hours ','3 Hours'),(108,'New Mexico ','NM','Albuquerque International Airport','ABQ','2 Hours ','3 Hours'),(109,'New Mexico ','NM','Alamogordo','ALM','2 Hours ','3 Hours'),(110,'New York','NY','Albany International Airport','ALB','2 Hours ','3 Hours'),(111,'New York','NY','Buffalo','BUF','2 Hours ','3 Hours'),(112,'New York','NY','Islip','ISP','2 Hours ','3 Hours'),(113,'New York','NY','New York,John F Kennedy International Airport','JFK','2 Hours ','3 Hours'),(114,'New York','NY','New York,La Guardia Airport','LGA','2 Hours ','3 Hours'),(115,'New York','NY','Newburgh','SWF','2 Hours ','3 Hours'),(116,'New York','NY','Rochester','ROC','2 Hours ','3 Hours'),(117,'New York','NY','Syracuse','SYR','2 Hours ','3 Hours'),(118,'New York','NY','Westchester','HPN','2 Hours ','3 Hours'),(119,'North Carolina','NC','Asheville','AVL','2 Hours ','3 Hours'),(120,'North Carolina','NC','Charlotte/Douglas International Airport','CLT','2 Hours ','3 Hours'),(121,'North Carolina','NC','Fayetteville','FAY','2 Hours ','3 Hours'),(122,'North Carolina','NC','Greensboro','GSO','2 Hours ','3 Hours'),(123,'North Carolina','NC','Raleigh','RDU','2 Hours ','3 Hours'),(124,'North Carolina','NC','Winston-Salem','INT','2 Hours ','3 Hours'),(125,'North Dakota','ND','Bismark','BIS','2 Hours ','3 Hours'),(126,'North Dakota','ND','Fargo','FAR','2 Hours ','3 Hours'),(127,'Ohio ','OH','Akron','CAK','2 Hours ','3 Hours'),(128,'Ohio ','OH','Cincinnati','CVG','2 Hours ','3 Hours'),(129,'Ohio ','OH','Cleveland','CLE','2 Hours ','3 Hours'),(130,'Ohio ','OH','Columbus','CMH','2 Hours ','3 Hours'),(131,'Ohio ','OH','Dayton','DAY','2 Hours ','3 Hours'),(132,'Ohio ','OH','Toledo','TOL','2 Hours ','3 Hours'),(133,'Oklahoma ','OK','Oklahoma City','OKC','2 Hours ','3 Hours'),(134,'Oklahoma ','OK','Tulsa','TUL','2 Hours ','3 Hours'),(135,'Oregon','OR','Eugene','EUG','2 Hours ','3 Hours'),(136,'Oregon','OR','Portland International Airport','PDX','2 Hours ','3 Hours'),(137,'Oregon','OR','Portland, Hillsboro Airport','HIO','2 Hours ','3 Hours'),(138,'Oregon','OR','Salem','SLE','2 Hours ','3 Hours'),(139,'Pennsylvania','PA','Allentown','ABE','2 Hours ','3 Hours'),(140,'Pennsylvania','PA','Erie','ERI','2 Hours ','3 Hours'),(141,'Pennsylvania','PA','Harrisburg','MDT','2 Hours ','3 Hours'),(142,'Pennsylvania','PA','Philadelphia','PHL','2 Hours ','3 Hours'),(143,'Pennsylvania','PA','Pittsburgh','PIT','2 Hours ','3 Hours'),(144,'Pennsylvania','PA','Scranton','AVP','2 Hours ','3 Hours'),(145,'Rhode Island','RI','Providence - T.F. Green Airport','PVD','2 Hours ','3 Hours'),(146,'South Carolina','SC','Charleston','CHS','2 Hours ','3 Hours'),(147,'South Carolina','SC','Columbia','CAE','2 Hours ','3 Hours'),(148,'South Carolina','SC','Greenville','GSP','2 Hours ','3 Hours'),(149,'South Carolina','SC','Myrtle Beach','MYR','2 Hours ','3 Hours'),(150,'South Dakota','SD','Pierre','PIR','2 Hours ','3 Hours'),(151,'South Dakota','SD','Rapid City','RAP','2 Hours ','3 Hours'),(152,'South Dakota','SD','Sioux Falls','FSD','2 Hours ','3 Hours'),(153,'Tennessee','TN','Bristol','TRI','2 Hours ','3 Hours'),(154,'Tennessee','TN','Chattanooga','CHA','2 Hours ','3 Hours'),(155,'Tennessee','TN','Knoxville','TYS','2 Hours ','3 Hours'),(156,'Tennessee','TN','Memphis','MEM','2 Hours ','3 Hours'),(157,'Tennessee','TN','Nashville','BNA','2 Hours ','3 Hours'),(158,'Texas','TX','Amarillo','AMA','2 Hours ','3 Hours'),(159,'Texas','TX','Austin Bergstrom International Airport','AUS','2 Hours ','3 Hours'),(160,'Texas','TX','Corpus Christi','CRP','2 Hours ','3 Hours'),(161,'Texas','TX','Dallas Love Field Airport','DAL','2 Hours ','3 Hours'),(162,'Texas','TX','Dallas/Fort Worth International Airport','DFW','2 Hours ','3 Hours'),(163,'Texas','TX','El Paso','ELP','2 Hours ','3 Hours'),(164,'Texas','TX','Houston, William B Hobby Airport','HOU','2 Hours ','3 Hours'),(165,'Texas','TX','Houston, George Bush Intercontinental Airport','IAH','2 Hours ','3 Hours'),(166,'Texas','TX','Lubbock','LBB','2 Hours ','3 Hours'),(167,'Texas','TX','Midland','MAF','2 Hours ','3 Hours'),(168,'Texas','TX','San Antonio International Airport','SAT','2 Hours ','3 Hours'),(169,'Utah','UT','Salt Lake City','SLC','2 Hours ','3 Hours'),(170,'Vermont','VT','Burlington','BTV','2 Hours ','3 Hours'),(171,'Vermont','VT','Montpelier','MPV','2 Hours ','3 Hours'),(172,'Vermont','VT','Rutland','RUT','2 Hours ','3 Hours'),(173,'Virginia','VA','Dulles','IAD','2 Hours ','3 Hours'),(174,'Virginia','VA','Newport News','PHF','2 Hours ','3 Hours'),(175,'Virginia','VA','Norfolk','ORF','2 Hours ','3 Hours'),(176,'Virginia','VA','Richmond','RIC','2 Hours ','3 Hours'),(177,'Virginia','VA','Roanoke','ROA','2 Hours ','3 Hours'),(178,'Washington','WA','Pasco, Pasco/Tri-Cities Airport','PSC','2 Hours ','3 Hours'),(179,'Washington','WA','Seattle, Tacoma International Airport','SEA','2 Hours ','3 Hours'),(180,'Washington','WA','Spokane International Airport','GEG','2 Hours ','3 Hours'),(181,'West Virginia','WV','Charleston','CRW','2 Hours ','3 Hours'),(182,'West Virginia','WV','Clarksburg','CKB','2 Hours ','3 Hours'),(183,'West Virginia','WV','Huntington Tri-State Airport','HTS','2 Hours ','3 Hours'),(184,'Wisconsin','WI','Green Bay','GRB','2 Hours ','3 Hours'),(185,'Wisconsin','WI','Madison','MSN','2 Hours ','3 Hours'),(186,'Wisconsin','WI','Milwaukee','MKE','2 Hours ','3 Hours'),(187,'Wyoming','WY','Casper','CPR','2 Hours ','3 Hours'),(188,'Wyoming','WY','Cheyenne','CYS','2 Hours ','3 Hours'),(189,'Wyoming','WY','Jackson Hole','JAC','2 Hours ','3 Hours'),(190,'Wyoming','WY','Rock Springs','RKS','2 Hours ','3 Hours');
+/*!40000 ALTER TABLE `airport` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2018-06-02 11:45:07

@@ -1,0 +1,9 @@
+CREATE TABLE `test`.`airport` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `st` VARCHAR(45) NULL,
+  `st_abr` VARCHAR(5) NULL,
+  `airport_name` VARCHAR(100) NULL,
+  `IATA` VARCHAR(6) NULL,
+  `pre_dom` INT(2) NULL,
+  `pre_int` INT(2) NULL,
+  PRIMARY KEY (`id`));
