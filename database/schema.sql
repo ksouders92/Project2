@@ -1,8 +1,8 @@
-DROP DATABASE IF EXISTS flight_times;
+DROP DATABASE IF EXISTS airport;
 
 /* Create database */
-CREATE DATABASE flight_times;
-USE flight_times;
+CREATE DATABASE airport;
+USE airport;
 
 /* Create new table with a primary key that auto-increments, and a text field */
 CREATE TABLE locations (
