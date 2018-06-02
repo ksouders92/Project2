@@ -5,7 +5,8 @@
   "main": "server.js",
   "dependencies": {
     "chart.js": "^2.7.2",
-    "mysql": "^2.15.0"
+    "mysql": "^2.15.0",
+    "process-env": "^1.1.0"
   },
   "devDependencies": {},
   "scripts": {
