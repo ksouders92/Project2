@@ -1,0 +1,18 @@
+<h1>Search</h1>
+
+<ul class="flights-list-container"></ul>
+
+<script id="flights-template" type"text/x-handlebars-template">
+    {{#each flight-response}}
+    <li class="flights">
+        <h2>aircraft: {{name}}</h2>
+        <p>airline: {{airline_icaoCode}}. {{airline_iataCode}}</p>
+        <p>arrival: {{arrival_icaoCode}}. {{arrival_iataCode}}}</p>
+        <p>departure: {{departure_icaoCode}}. {{departure_iataCode}}</p>
+        <p>flight: {{flight_icaoNumber}}. {{number}}. {{flight_iataNumber}}</p>
+        <p>geography: {{latitude}} {{longitude}}. {{altitude}}. {{direction}}</p>
+        <p>status: {{#if status}}{{status}}{{else}}unknown{{/if}}</p>
+    {{/each}}
+    </li>
+
+</script>
