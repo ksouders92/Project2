@@ -4,8 +4,8 @@ var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
 var exphbs = require('express-handlebars');
 var path = require('path');
-//var processEnv = require ('process-env')
 var favicon = require('serve-favicon');
+require('dotenv').config()
 
 var PORT = process.env.PORT || 8080;
 

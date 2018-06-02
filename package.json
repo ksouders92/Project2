@@ -14,7 +14,9 @@
     "process-env": "^1.1.0",
     "serve-favicon": "^2.5.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "dotenv": "^5.0.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
