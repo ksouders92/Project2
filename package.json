@@ -1,0 +1,25 @@
+{
+  "name": "project2",
+  "version": "1.0.0",
+  "description": "UCF Coding Bootcamp Group Project #2",
+  "main": "server.js",
+  "dependencies": {
+    "chart.js": "^2.7.2",
+    "mysql": "^2.15.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ksouders92/Project2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ksouders92/Project2/issues"
+  },
+  "homepage": "https://github.com/ksouders92/Project2#readme"
+}
