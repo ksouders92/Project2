@@ -1,18 +1,37 @@
 <h1>Search</h1>
 
-<ul class="flights-list-container"></ul>
+<h3>Airport Search</h3>
+<ul class="airport-list-container">
+  {{#each airport}}
+    {{#unless this.airportCode}}
+    {{#if airport}}{{status}}{{else}}unknown{{/if}}
+      <li class="airports">
+        <p>airport{{this.airport}}</p>
+        <p>airport code{{this.airportCode}}</p>
 
-<script id="flights-template" type"text/x-handlebars-template">
-    {{#each flight-response}}
+        <form action="Project2/update/{{this.id}}?_method=PUT" method="POST">
+          <button type="submit"></button>
+        </form>
+
+        {{> airport/delete-airport}}
+      </li>
+    {{/unless}}
+  {{/each}}
+</ul>
+
+
+
+<h3>Flights Search</h3>
+<ul class="flights-list-container">
+    {{#each flightResponse}}
     <li class="flights">
-        <h2>aircraft: {{name}}</h2>
-        <p>airline: {{airline_icaoCode}}. {{airline_iataCode}}</p>
-        <p>arrival: {{arrival_icaoCode}}. {{arrival_iataCode}}}</p>
-        <p>departure: {{departure_icaoCode}}. {{departure_iataCode}}</p>
-        <p>flight: {{flight_icaoNumber}}. {{number}}. {{flight_iataNumber}}</p>
+        <p>aircraft: {{name}}</p>
+        <p>airline: {{airline.icaoCode}}. {{airline.iataCode}}</p>
+        <p>arrival: {{arrival.icaoCode}}. {{arrival.iataCode}}}</p>
+        <p>departure: {{departure.icaoCode}}. {{departure.iataCode}}</p>
+        <p>flight: {{flight.icaoNumber}}. {{number}}. {{flight.iataNumber}}</p>
         <p>geography: {{latitude}} {{longitude}}. {{altitude}}. {{direction}}</p>
         <p>status: {{#if status}}{{status}}{{else}}unknown{{/if}}</p>
-    {{/each}}
     </li>
-
-</script>
+    {{/each}}
+</ul>
