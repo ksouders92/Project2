@@ -1,3 +1,4 @@
+$(document).ready(function(){
 var chart1 = document.getElementById('chart1').getContext('2d');
 
 var mostPlanesChart = new Chart (chart1,{
@@ -5,7 +6,6 @@ var mostPlanesChart = new Chart (chart1,{
     data: {
         labels: ['US', 'China', 'Canada', 'Germany', 'UK', 'France', 'Japan', 'Brazil', 'Spain', 'India'],
         datasets: [{
-            label: 'Top 10 Countries with Most Planes in the Air',
             data: [
                 9054478,
                 1853088,
@@ -17,11 +17,30 @@ var mostPlanesChart = new Chart (chart1,{
                 647753,
                 616893,
                 592292,
+            ],
+            backgroundColor: [
+                '#A7574A',
+                '#4C2733',
+                '#4C3950',
+                '#3B4F67',
+                '#1E656E',
+                '#1F7865',
+                '#4D874F',
+                '#84903C',
+                '#C0923D',
+                '#EC895B'
             ]
             
         }],
     },
-    options: {}
+    options: {
+        title: {
+            display: true,
+            text: 'Top 10 Countries with Most Planes in the Air',
+            fontSize: 24
+        
+        }
+    }
 });
 
 var chart2 = document.getElementById('chart2').getContext('2d');
@@ -30,7 +49,6 @@ var mostPassengersChart = new Chart (chart2,{
     data: {
         labels: ['US', 'China', 'UK', 'Germany', 'Japan', 'Ireland', 'Brazil', 'India', 'Turkey', 'Indonesia'],
         datasets: [{
-            label: 'Top 10 Countries with Most Passengers in the Air',
             data: [
                 798230000,
                 436183969,
@@ -42,9 +60,28 @@ var mostPassengersChart = new Chart (chart2,{
                 98927860,
                 96604665,
                 88685767,
+            ],
+            backgroundColor: [
+                '#A7574A',
+                '#4C2733',
+                '#4C3950',
+                '#3B4F67',
+                '#1E656E',
+                '#1F7865',
+                '#4D874F',
+                '#84903C',
+                '#C0923D',
+                '#EC895B'
             ]
             
         }],
     },
-    options: {}
+    options: {
+        title: {
+            display: true,
+            text: 'Top 10 Countries with Most Passengers in the Air',
+            fontSize: 24
+        }
+    }
+});
 });
