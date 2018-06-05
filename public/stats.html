@@ -8,19 +8,68 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+
+
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="assets/css/appstyle.css">
+
+
+
+
+
+
+
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">FlightVUE</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="chart.html">Data</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Airline Search</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Meet the Developers</a>
+                    </li>
+                  </ul>
+                  <span class="navbar-text">
+                    
+                  </span>
+                </div>
+              </nav>
+
+
+
+
+
+
+
+
+
 
     <title>Air Traffic Statistics</title>
 </head>
 <header>
         <nav class="navbar navbar-light bg-light">
+
+            
                 <span class="navbar-brand mb-0 h1"><h1><strong>Global Air Traffic Statistics</strong></h1></span>
         </nav>
 </header>
 
 <body>
-    <div class="chart-container" style="position: relative; height:40vh; width:80vw">
+    <div class="chart-container" style="position: relative; height:18vh; width:38vw">
             <div class="row">
                     <div class="col-xs-12">
                         <canvas id="chart1">
