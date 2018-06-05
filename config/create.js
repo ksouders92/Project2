@@ -1,8 +1,8 @@
 var connection = require('./connection.js');
 
 var orm = {
-    all: function (tableInput, cb) {
-        connection.query('SELECT * FROM ' + tableInput + ';', function (
+    all: function (tableInput, condition, cb) {
+        connection.query('SELECT * FROM `airport` WHERE `airport_name` = ? ' , , function (
             err, result) {
             if (err) throw err;
             cb(result)

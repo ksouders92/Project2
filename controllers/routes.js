@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var arrivalTime = require('../models/timeToArrive.js');
+
 router.get("/", function (req, res) {
     arrivalTime.all(function(arrivalData) {
         var flight = {
@@ -55,8 +56,18 @@ router.get("/", function (req, res) {
 });
 
 
-router.post("/create/favorites", function (req, res) {
+
+
+ router.get("/airports/create", function (req, res) {
+     console.log('search', req.query.airport_search)
+     var condition = '`airport_name` = "' + req.query.airport_search +'"';
+
+     console.log(condition);
     
+        arrivalTime.all(condition, function (arrivalTime_data) {
+          console.log(arrivalTime_data)
+            res.render('index', { arrivalTime_data });
+        })
     });
 //export routes
 module.exports = router;
