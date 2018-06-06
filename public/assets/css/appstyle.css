@@ -21,6 +21,9 @@ body{
 .jumbotron{
   background: none;
   background: transparent;
+  padding-bottom:0px;
+  margin-bottom: 0px;
+  
 }
 
   .container{ padding: 10px;}
@@ -86,7 +89,6 @@ body {margin:0;}
 .epic{
   text-align: center;
 }
-
 
 
 
