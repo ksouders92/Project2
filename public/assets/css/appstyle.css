@@ -5,17 +5,18 @@ body{ background-image: url("https://amazingpict.com/wp-content/uploads/2014/04/
 }
 .container-fluid {text-align: center;
   display: block;
+  padding: 10px;
  ;
   width: 70%;
   ;
 }
-
+.img{padding: 10px;}
 
 .jumbotron{
   background: none;
   background: transparent;}
 
- 
+  .container{ padding: 10px;}
     
     /* Set black background color, white text and some padding */
 
@@ -26,9 +27,53 @@ body{ background-image: url("https://amazingpict.com/wp-content/uploads/2014/04/
     .articleHeadline {
       line-height: 1.5;
     }
-    .navbar{
-        height: 80px;}
+    .header{
+        height: 80px;
+  background-color: grey;  }
 
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #516A9B;
+    color: white;
+    text-align: center;
+}
+body {margin:0;}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
+
+.bg-company-blue {
+  background-color: #516A9B;
+}
 
        
 
@@ -42,6 +87,13 @@ p{text-align: center;
 font: 200;
 color: white;}
 
+
+.box {
+  padding: 0 5px 0 5px;
+}
+.box .inner {
+  background-color: #fff;
+}
 
 
 
