@@ -1,8 +1,13 @@
-h1{font-size: 65px;
+h1{
+font-size: 65px;
 font-family: Broadway;
-color:  rgb(64, 109, 199);}
+color:  rgb(64, 109, 199);
+padding-top: 40px;
+}
 
-body{ background-image: url("https://amazingpict.com/wp-content/uploads/2014/04/Sky-Clouds-from-Plane-Wallpaper.jpg");
+body{
+   background-image: url("https://amazingpict.com/wp-content/uploads/2014/04/Sky-Clouds-from-Plane-Wallpaper.jpg");
+    background-repeat: round
 }
 .container-fluid {text-align: center;
   display: block;
@@ -11,7 +16,7 @@ body{ background-image: url("https://amazingpict.com/wp-content/uploads/2014/04/
   width: 70%;
   ;
 }
-.img{padding: 10px;}
+.img{padding-bottom: 10px;}
 
 .jumbotron{
   background: none;
@@ -78,7 +83,9 @@ body {margin:0;}
 }
 
        
-.epic{text-align: center;}
+.epic{
+  text-align: center;
+}
 
 
 
