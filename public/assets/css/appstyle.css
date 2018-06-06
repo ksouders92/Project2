@@ -1,35 +1,27 @@
 h1{font-size: 65px;
-font-family: Broadway;}
+font-family: Broadway;
+color:  rgb(64, 109, 199);}
 
 body{ background-image: url("https://amazingpict.com/wp-content/uploads/2014/04/Sky-Clouds-from-Plane-Wallpaper.jpg");
 }
 .container-fluid {text-align: center;
   display: block;
+  padding: 10px;
  ;
   width: 70%;
   ;
 }
-
+.img{padding: 10px;}
 
 .jumbotron{
   background: none;
-  background: transparent;}
+  background: transparent;
+}
 
-    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
-    .row.content {height: 1500px}
-    
-    /* Set gray background color and 100% height */
-    .sidenav {
-      background-color: #f1f1f1;
-      height: 100%;
-    }
+  .container{ padding: 10px;}
     
     /* Set black background color, white text and some padding */
-    footer {
-      background-color: #555;
-      color: white;
-      padding: 15px;
-    }
+
     .panel-body a {
       word-break: break-all;
     }
@@ -37,11 +29,72 @@ body{ background-image: url("https://amazingpict.com/wp-content/uploads/2014/04/
     .articleHeadline {
       line-height: 1.5;
     }
+    .header{
+        height: 80px;
+  background-color: grey;  }
+
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #516A9B;
+    color: white;
+    text-align: center;
+}
+body {margin:0;}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
+
+.bg-company-blue {
+  background-color: #516A9B;
+}
+
+       
+.epic{text-align: center;}
 
 
 
 
 
+p{text-align: center;
+font: 200;
+color: white;}
+
+
+.box {
+  padding: 0 5px 0 5px;
+}
+.box .inner {
+  background-color: #fff;
+}
 
 
 
