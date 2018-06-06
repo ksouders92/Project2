@@ -1,5 +1,6 @@
 h1{font-size: 65px;
-font-family: Broadway;}
+font-family: Broadway;
+color:  rgb(64, 109, 199);}
 
 body{ background-image: url("https://amazingpict.com/wp-content/uploads/2014/04/Sky-Clouds-from-Plane-Wallpaper.jpg");
 }
@@ -14,7 +15,8 @@ body{ background-image: url("https://amazingpict.com/wp-content/uploads/2014/04/
 
 .jumbotron{
   background: none;
-  background: transparent;}
+  background: transparent;
+}
 
   .container{ padding: 10px;}
     
@@ -76,9 +78,8 @@ body {margin:0;}
 }
 
        
+.epic{text-align: center;}
 
-
-        .chart-container{background-color: rgb(53, 30, 30);}
 
 
 
