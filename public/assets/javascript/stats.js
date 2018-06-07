@@ -136,7 +136,8 @@ $(document).ready(function () {
         data: {
             labels: ['Dubai International Airport', 'London Heathrow Airport', 'Hong Kong International Airport',
              'Paris-Charles de Gaulle Airport', 'Amsterdam Airport Schiphol',
-              'Singapore Changi Airport ', 'Frankfurt Airport', 'Incheon International Airport', 'Paraguay', 'Indonesia'],
+              'Singapore Changi Airport ', 'Frankfurt Airport', 'Incheon International Airport', 
+              'Suvarnabhumi Airport ', 'Atatürk International Airport'],
             datasets: [{
                 data: [
                     77.5,
@@ -147,8 +148,8 @@ $(document).ready(function () {
                     54.8,
                     54,
                     48.7,
-                    799,
-                    673,
+                    46,
+                    41.1,
                 ],
                 backgroundColor: [
                     '#A7574A',
@@ -174,4 +175,6 @@ $(document).ready(function () {
             }
         }
     });
+
+ 
 });

@@ -1,66 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie-edge">
-  <title>ExampleFlgihtApp</title>
-  <meta name="decription" content=""> 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <!--Plane Icon-->
   <link rel="shortcut icon" href="assets\images\icon.png" type="favicon/ico" />
-  <!-- Chart js s-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js
-  "></script>
-  
+
+
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="assets/css/appstyle.css">
 
+  <link rel="stylesheet" type="text/css" href="assets/css/appstyle.css">
 </head>
-  
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar w/ text</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-company-blue">
+        <a class="navbar-brand" href="index.html">FLIGHTVUE</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
+          aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="AviationAPI.html">Airline Search</a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="./flighttime.html">Time to Arrive</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="team.html">Meet the Developers</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
+                <a class="nav-link" href="stats.html">Data</a>
+              </li>
           </ul>
           <span class="navbar-text">
-            Navbar text with an inline element
+      
           </span>
         </div>
       </nav>
-    
-    
-        <div class="jumbotron text-center">
-            <h1>The COOL Flight App</h1>
-        <p>A simple and easy way to get the Flight Information You need</p>
-      
-        </div>
 
-<body>
 
+    <div class="jumbotron text-center">
+            <h1>FliGhtVUE</h1>
+            <h4>A simple and easy way
+              <br>to get the flight information you need</h4>
+          
+          </div>
+
+
+
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<!-- Flight Form Select Box -->
+<form id="artist-form">
+
+    <!-- Label for Text Box -->
+    <label for="flight-input">Enter your query here: </label>
+
+    <!-- Text Input Box -->
+    <input type="text" id="flight-input"><br>
+
+    <!-- Submit Button -->
+    <button id="select-flight" type="button"> Search</button>
+
+</form>
+
+    <!-- Flight Information -->
+    <div id="#flight-div"> PRINT FLIGHT INFO </div>
+
+<script type="text/javascript">
+
+function searchAirlineInfo(flights) {
+
+    // These are the IATA (Airline) IDs
+    var airlineID = ['AA', 'DL', 'UA', 'WN', 'CZ', 'MU', 'OO', 'CA', 'FX', 'FR']
+
+    // For Loop then loops through our airline ID list...
+    // for (var i = 0; i < airlineID.length; i++);
+
+    // This is our API key
+    var APIKey = "c01fd7-969ed0-3099d2-a11922-3805dd";
+
+    // Here we are building the URL we need to query the database
+    var queryURL = "https://aviation-edge.com/api/public/flights?key=" + APIKey;
+
+    // Here we run our AJAX call to the Aviation Edge API
+    $.ajax({
+    url: queryURL,
+    method: "GET"
+    })
+
+    // We store all of the retrieved data inside of an object called "response"
     
-    <div class="container-fluid">
-  <img src="https://4brf13430svm3bnu053zbxvg-wpengine.netdna-ssl.com/wp-content/uploads/2017/09/Southwest-Airlines-Review-from-Upgraded-Points-e1506536455337.jpg" width="525" height="525" >
-    </div>
+    .then(function(response) {
 
-    <div class="jumbotron text-center" style="margin-bottom:0">
-        <a href="team.html">Meet the Creators of the ExampleFlgihtApp</a>
-      <p>&copy Planeexample app 2018 . All Rights Reserved.</p>
-    </div>
-    <script src="assets\javascript\flightscript.js"></script>
-    <script src="assets\javascript\Chart.bundle.js"></script>
-	<script src="assets\javascript\utils.js"></script>
+    // Log the queryURL
+    console.log(queryURL);
+
+    // Log the resulting object (all airlines)
+    var data = JSON.parse(response)
+
+    var filtered = data.filter(function(flight){
+        return flight.flight.iataNumber = ' '
+    })
+
+    console.log(filtered)
+
+    // Constructing HTML containing the artist information    
+    var airlineInfo = $("<h1>").text(response.flight);
+
+    // Empty contents of the flight-div
+    $("#flight-div").empty();
+
+    // Both of these are coming out the same
+    console.log(JSON.parse(response))});
+
+}
+
+    // Event handler for user clicking the select-flight button
+    $("#select-flight").on("click", function(event){
+
+    // Preventing the button from trying to submit the form
+    event.preventDefault();
+
+    // Storing the flight info
+    var inputFlight = $("#flight-input").val().trim();
+
+    // Running the searchAirlineInfo function (passing in the flight as argument)
+    searchAirlineInfo(inputFlight);
+    });
+
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+            
 </body>
 </html>

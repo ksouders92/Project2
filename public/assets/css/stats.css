@@ -1,0 +1,11 @@
+body{
+    background-image: url("https://amazingpict.com/wp-content/uploads/2014/04/Sky-Clouds-from-Plane-Wallpaper.jpg");
+    background-repeat: no-repeat;
+ }
+
+ h1{
+    font-size: 65px;
+    font-family: Broadway;
+    color:  rgb(64, 109, 199);
+    padding-top: 40px;
+    }

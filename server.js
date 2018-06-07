@@ -11,12 +11,11 @@ var PORT = process.env.PORT || 8080;
 
 var app = express();
 
+
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+
 app.use(express.static(__dirname + '/public'));
-
-app.use(bodyParser.urlencoded({
-    extended: false
-}));
-
 
 app.use(methodOverride('__method'));
 app.engine('handlebars', exphbs({
@@ -27,10 +26,10 @@ app.set('view engine', 'handlebars');
 var routes = require('./controllers/routes.js');
 app.use("/", routes);
 
-app.get('/css', function (req, res){
-    res.sendFile(path.join(__dirname, '/public/assets/css/appstyle.css'));
+// app.get('/css', function (req, res){
+//     res.sendFile(path.join(__dirname, '/public/assets/css/appstyle.css'));
   
-  })
+//   })
 
 // Start our server so that it can begin listening to client requests.
 app.listen(PORT, function() {
