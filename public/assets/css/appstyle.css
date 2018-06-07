@@ -7,7 +7,9 @@ padding-top: 40px;
 
 body{
    background-image: url("https://amazingpict.com/wp-content/uploads/2014/04/Sky-Clouds-from-Plane-Wallpaper.jpg");
-    background-repeat: round
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
 }
 .container-fluid {text-align: center;
   display: block;

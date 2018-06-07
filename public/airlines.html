@@ -4,19 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
     crossorigin="anonymous">
   <!--Plane Icon-->
   <link rel="shortcut icon" href="assets\images\icon.png" type="favicon/ico" />
-
-
-
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 
   <link rel="stylesheet" type="text/css" href="assets/css/appstyle.css">
+    <title>Search FliGhtVUE for live flight data</title>
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-company-blue">
         <a class="navbar-brand" href="index.html">FLIGHTVUE</a>
@@ -30,7 +29,7 @@
       
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="AviationAPI.html">Airline Search</a>
+              <a class="nav-link" href="airlines.html">Airline Search</a>
             </li>
             
             <li class="nav-item">
@@ -48,21 +47,20 @@
           </span>
         </div>
       </nav>
-
+    
+  
 
     <div class="jumbotron text-center">
+        <div class="jumbotron text-center">
             <h1>FliGhtVUE</h1>
             <h4>A simple and easy way
               <br>to get the flight information you need</h4>
           
           </div>
-
-
-
-<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <br>
 
 <!-- Flight Form Select Box -->
-<form id="artist-form">
+<form id="flightNumber-form" 
 
     <!-- Label for Text Box -->
     <label for="flight-input">Enter your query here: </label>
@@ -74,19 +72,19 @@
     <button id="select-flight" type="button"> Search</button>
 
 </form>
+<div id="flight-div">
+    <form method="POST" action="">
+        <button type="submit" class="btn btn-primary">Favorite</button>
+  
+</div>
 
-    <!-- Flight Information -->
-    <div id="#flight-div"> PRINT FLIGHT INFO </div>
+<div class="footer">
+    <p> &copy FlightVUE 2018 . All Rights Reserved. </p>
+  </div>
 
 <script type="text/javascript">
 
 function searchAirlineInfo(flights) {
-
-    // These are the IATA (Airline) IDs
-    var airlineID = ['AA', 'DL', 'UA', 'WN', 'CZ', 'MU', 'OO', 'CA', 'FX', 'FR']
-
-    // For Loop then loops through our airline ID list...
-    // for (var i = 0; i < airlineID.length; i++);
 
     // This is our API key
     var APIKey = "c01fd7-969ed0-3099d2-a11922-3805dd";
@@ -97,6 +95,7 @@ function searchAirlineInfo(flights) {
     // Here we run our AJAX call to the Aviation Edge API
     $.ajax({
     url: queryURL,
+    dataType: "html",
     method: "GET"
     })
 
@@ -108,24 +107,42 @@ function searchAirlineInfo(flights) {
     console.log(queryURL);
 
     // Log the resulting object (all airlines)
-    var data = JSON.parse(response)
+    var data = JSON.parse(response);
+    var searchTerm = document.getElementById("flight-input").value;
+
+    console.log(searchTerm);
 
     var filtered = data.filter(function(flight){
-        return flight.flight.iataNumber = ' '
+        console.log(flight.flight.iataNumber)
+         return flight.flight.iataNumber === searchTerm;
     })
 
     console.log(filtered)
 
-    // Constructing HTML containing the artist information    
-    var airlineInfo = $("<h1>").text(response.flight);
-
     // Empty contents of the flight-div
     $("#flight-div").empty();
 
-    // Both of these are coming out the same
-    console.log(JSON.parse(response))});
+    filtered.map(function(flight) {
+        var airline = $("<h1>").text('Airline: ' + flight.airline.iataCode);
+        var arrival = $("<h1>").text('Arrival: ' + flight.arrival.iataCode);
+        var departure = $("<h1>").text('Departure: ' + flight.departure.iataCode);
+        var aircraft = $("<h1>").text('Aircraft: ' + flight.aircraft.icaoCode);
+        var flightNumber = $("<h1>").text('Flight Number: ' + flight.flight.iataNumber);
+        var status = $("<h1>").text('Airline: ' + flight.status);
+        
 
-}
+        var container = $('<div>').append(airline, arrival, departure, aircraft, flightNumber, status);
+        
+        $('#flight-div').append(container);
+    })
+
+ 
+    // Both of these are coming out the same
+    // console.log(JSON.parse(response))
+    
+    });
+
+    }
 
     // Event handler for user clicking the select-flight button
     $("#select-flight").on("click", function(event){
@@ -140,11 +157,14 @@ function searchAirlineInfo(flights) {
     searchAirlineInfo(inputFlight);
     });
 
+
+
 </script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
             
 </body>
 </html>

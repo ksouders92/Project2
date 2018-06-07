@@ -1,5 +1,9 @@
 <ul>
   {{#each airports}}
-    <p>{{airport_name}}</p>
+    <h1>Name: {{airport_name}}</h1><br>
+    <h3>Airport Code: {{IATA}}</h3><br>
+    <h3>State: {{st}}</h3>
+    <h4>How early to arrive for Domestic flights: {{pre_dom}}</h3>
+    <h4>How early to arrive for International flights: {{pre_int}}</h3>
   {{/each}}
 </ul>
