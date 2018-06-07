@@ -10,15 +10,37 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
+    margin:0;
 }
 .container-fluid {text-align: center;
   display: block;
   padding: 10px;
- ;
   width: 70%;
-  ;
 }
-.img{padding-bottom: 10px;}
+
+.form-control{
+  width:50%
+}
+
+.airport_search_container{
+  align-items: center;
+  padding-left:20px;
+}
+.img{
+  padding-bottom: 10px;
+}
+
+.timeToArriveResults{
+  background-color: lightgrey;
+  width: 95%;
+  border-width: 15px;
+  position: relative;
+  border-style: solid;
+  border-color: rgb(81, 106, 155);
+  border-image: initial;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
 
 .jumbotron{
   background: none;
@@ -28,7 +50,13 @@ body{
   
 }
 
-  .container{ padding: 10px;}
+.form-group{
+  color:white;
+}
+
+  .container{ 
+    padding: 10px;
+  }
     
     /* Set black background color, white text and some padding */
 
@@ -52,7 +80,6 @@ body{
     color: white;
     text-align: center;
 }
-body {margin:0;}
 
 .navbar {
   overflow: hidden;
@@ -92,13 +119,9 @@ body {margin:0;}
   text-align: center;
 }
 
-
-
-
 p{text-align: center;
 font: 200;
 color: white;}
-
 
 .box {
   padding: 0 5px 0 5px;
@@ -107,41 +130,21 @@ color: white;}
   background-color: #fff;
 }
 
-
-h4 {
+.teamMember, .img-responsive, #teamMate {
   background-color: lightgrey;
   width: 300px;
   border-width: 15px;
+  position: relative;
   border-style: solid;
   border-color: rgb(81, 106, 155);
   border-image: initial;
   padding: 15px;
   margin: 15px;
   float: left;
-
-
-
-
-
-
-
-
-
-
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-*/
-
-@media (min-width: 1281px) {
-  
-  //CSS
-  
 }
 
-/* 
-  ##Device = Laptops, Desktops
-  ##Screen = B/w 1025px to 1280px
-*/
+
+
 
 @media (min-width: 1025px) and (max-width: 1280px) {
   
@@ -156,40 +159,28 @@ h4 {
 
 @media (min-width: 768px) and (max-width: 1024px) {
   
-  //CSS
   
 }
 
-/* 
-  ##Device = Tablets, Ipads (landscape)
-  ##Screen = B/w 768px to 1024px
-*/
+
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   
-  //CSS
   
 }
 
-/* 
-  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-  ##Screen = B/w 481px to 767px
-*/
+
 
 @media (min-width: 481px) and (max-width: 767px) {
   
-  //CSS
   
 }
 
-/* 
-  ##Device = Most of the Smartphones Mobiles (Portrait)
-  ##Screen = B/w 320px to 479px
-*/
+
 
 @media (min-width: 320px) and (max-width: 480px) {
   
-  //CSS
+  
   
 }
 

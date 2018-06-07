@@ -50,54 +50,64 @@
     
     
 
-    <div class="jumbotron text-center">
         <div class="jumbotron text-center">
             <h1>FliGhtVUE</h1>
-            <h4>A simple and easy way
-              <br>to get the flight information you need</h4>
+            <h4>A simple & easy way to get <br>
+              the flight information you need</h4>
+          
           
           </div>
         <br>
     <!-- Bootstrap Search Container -->
-  <div class="container">
-<h4> Search by State , Airport code , or Airport name to see What time you should arrive at the Aiport</h4>
-      <!-- Row for Searching the Mysql Data Base -->
-      <div class="row">
+    <div class="airport_search_container">
+    <h5> Search by State , Airport code , or Airport name to see What time you should arrive at the Aiport</h5>
+    <!-- Row for Searching the Mysql Data Base -->
+    <div class="row">
           <div class="col-sm-12">
           <form action="/airports/search" method="GET">
             <div class="form-group">
               <label for="airport-code">Search by Aiport Name</label>
             <input type="text" name="airport_search" class="form-control" value="" id="aiport_search">
             <input type="hidden" name="type" class="form-control" value="airport_name">
-            </div>
+            
             <button type="submit" class="btn btn-primary">
                 <strong>SUBMIT!</strong>
             </button>
+            </div>
             </form>
+            </div>
 
+            <div class="col-sm-12">
             <form action="/airports/search" method="GET">
               <div class="form-group">
                 <label for="airport-code">Search by Aiport Code</label>
               <input type="text" name="airport_search" class="form-control" value="" id="aiportCode-search">
               <input type="hidden" name="type" class="form-control" value="IATA">
-              </div>
+             
               <button type="submit" class="btn btn-primary">
                   <strong>SUBMIT!</strong>
               </button>
+              </div>
               </form>
+              </div>
 
+              <div class="col-sm-12">
               <form action="/airports/search" method="GET">
                 <div class="form-group">
                   <label for="airport-code">Search by State</label>
                 <input type="text" name="airport_search" class="form-control" value="" id="state-search">
                 <input type="hidden" name="type" class="form-control" value="st_abr">
-                </div>
+               
                 <button type="submit" class="btn btn-primary">
                     <strong>SUBMIT!</strong>
                 </button>
+                </div>
                 </form>
+              </div>
                 </div>
                 </div>
+               
+                
                 <br>
                 <br>
                 <br>
