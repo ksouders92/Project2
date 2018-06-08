@@ -7,6 +7,15 @@ var path = require('path');
 var favicon = require('serve-favicon');
 require('dotenv').config()
 
+require("jsdom").env("", function(err, window) {
+    if (err) {
+        console.error(err);
+        return;
+    }
+ 
+    var $ = require("jquery")(window);
+});
+
 var PORT = process.env.PORT || 8080;
 
 var app = express();

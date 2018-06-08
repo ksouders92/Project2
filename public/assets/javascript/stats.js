@@ -37,8 +37,8 @@ $(document).ready(function () {
             title: {
                 display: true,
                 text: 'Top 10 Countries with Most Planes in the Air',
-                fontSize: 24
-
+                fontSize: 24,
+              
             }
         }
     });
