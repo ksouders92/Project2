@@ -1,124 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie-edge">
   <title>FliGhtVUE</title>
-  <meta name="decription" content=""> 
+  <meta name="decription" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
   <link rel="shortcut icon" href="assets\images\icon.png" type="favicon/ico" />
   <!-- Chart js s-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"
-  ></script>
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+
   <link rel="stylesheet" type="text/css" href="assets/css/appstyle.css">
 </head>
-<body> 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-company-blue">
-        <a class="navbar-brand" href="index.html">FliGhtVUE</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
-          aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-      
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="airlines.html">Airline Search</a>
-            </li>
-            
-            <li class="nav-item">
-                <a class="nav-link" href="./flighttime.html">Time to Arrive</a>
-              </li>
-            <li class="nav-item">
-              <a class="nav-link" href="team.html">Meet the Developers</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="stats.html">Data</a>
-              </li>
-          </ul>
-          <span class="navbar-text">
-      
-          </span>
-        </div>
-      </nav>
-    
-    
 
-        <div class="jumbotron text-center">
-            <h1>FliGhtVUE</h1>
-            <h4>A simple & easy way to get <br>
-              the flight information you need</h4>
-          
-          
-          </div>
-        <br>
-    <!-- Bootstrap Search Container -->
-    <div class="airport_search_container">
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-company-blue">
+    <a class="navbar-brand" href="index.html">FliGhtVUE</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="airlines.html">Airline Search</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="./flighttime.html">Time to Arrive</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="team.html">Meet the Developers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="stats.html">Data</a>
+        </li>
+      </ul>
+      <span class="navbar-text">
+
+      </span>
+    </div>
+  </nav>
+
+
+
+  <div class="jumbotron text-center">
+    <h1>FliGhtVUE</h1>
+    <h4>A simple & easy way to get
+      <br> the flight information you need</h4>
+
+
+  </div>
+  <br>
+  <!-- Bootstrap Search Container -->
+  <div class="airport_search_container">
     <h5> Search by State , Airport code , or Airport name to see what time you should arrive at the Aiport</h5>
     <!-- Row for Searching the Mysql Data Base -->
     <div class="row">
-          <div class="col-sm-12">
-          <form action="/airports/search" method="GET">
-            <div class="form-group">
-              <label for="airport-code">Search by Aiport Name</label>
+      <div class="col-sm-12">
+        <form action="/airports/search" method="GET">
+          <div class="form-group">
+            <label for="airport-code">Search by Aiport Name</label>
             <input type="text" name="airport_search" class="form-control" value="" id="aiport_search">
             <input type="hidden" name="type" class="form-control" value="airport_name">
-            
+
             <button type="submit" class="btn btn-primary">
-                <strong>SUBMIT!</strong>
+              <strong>SUBMIT!</strong>
             </button>
-            </div>
-            </form>
-            </div>
+          </div>
+        </form>
+      </div>
 
-            <div class="col-sm-12">
-            <form action="/airports/search" method="GET">
-              <div class="form-group">
-                <label for="airport-code">Search by Aiport Code</label>
-              <input type="text" name="airport_search" class="form-control" value="" id="aiportCode-search">
-              <input type="hidden" name="type" class="form-control" value="IATA">
-             
-              <button type="submit" class="btn btn-primary">
-                  <strong>SUBMIT!</strong>
-              </button>
-              </div>
-              </form>
-              </div>
+      <div class="col-sm-12">
+        <form action="/airports/search" method="GET">
+          <div class="form-group">
+            <label for="airport-code">Search by Aiport Code</label>
+            <input type="text" name="airport_search" class="form-control" value="" id="aiportCode-search">
+            <input type="hidden" name="type" class="form-control" value="IATA">
 
-              <div class="col-sm-12">
-              <form action="/airports/search" method="GET">
-                <div class="form-group">
-                  <label for="airport-code">Search by State</label>
-                <input type="text" name="airport_search" class="form-control" value="" id="state-search">
-                <input type="hidden" name="type" class="form-control" value="st_abr">
-               
-                <button type="submit" class="btn btn-primary">
-                    <strong>SUBMIT!</strong>
-                </button>
-                </div>
-                </form>
-              </div>
-                </div>
-                </div>
-               
-                
-                <br>
-                <br>
-                <br>
+            <button type="submit" class="btn btn-primary">
+              <strong>SUBMIT!</strong>
+            </button>
+          </div>
+        </form>
+      </div>
 
-      
+      <div class="col-sm-12">
+        <form action="/airports/search" method="GET">
+          <div class="form-group">
+            <label for="airport-code">Search by State</label>
+            <input type="text" name="airport_search" class="form-control" value="" id="state-search">
+            <input type="hidden" name="type" class="form-control" value="st_abr">
 
-      
-<div class="footer">
+            <button type="submit" class="btn btn-primary">
+              <strong>SUBMIT!</strong>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <br>
+  <br>
+  <br>
+
+
+
+
+  <div class="footer">
     <p> &copy FliGhtVUE 2018 . All Rights Reserved. </p>
   </div>
- 
-  
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 </body>
+
 </html>
