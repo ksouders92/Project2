@@ -8,6 +8,7 @@
     "chart.js": "^2.7.2",
     "express": "^4.16.3",
     "express-handlebars": "^3.0.0",
+    "jquery": "^3.3.1",
     "method-override": "^2.3.10",
     "mysql2": "^1.5.3",
     "path": "^0.12.7",
