@@ -157,6 +157,20 @@ color: white;}
   
 }
 
+.form-group,.form-control{
+  text-align: center;
+  font: 800;
+  font:bold;
+  color: #000;
+  
+  font:  sans-serif;
+       margin: 0 auto;  width:58vw
+}
+
+h5{
+  text-align:center;
+}
+
 
 
 
