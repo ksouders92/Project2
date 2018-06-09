@@ -1,8 +1,9 @@
-h1{
-font-size: 65px;
+#flight-div{
+font-size: 25px;
 font-family: Broadway;
-color:  rgb(64, 109, 199);
+color:  black;
 padding-top: 40px;
+margin-bottom: 40px;
 }
 
 body{
@@ -176,6 +177,8 @@ h5{
   width:50%;
   height:100%
 }
+
+
 
 
 
