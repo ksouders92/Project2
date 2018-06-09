@@ -171,6 +171,11 @@ h5{
   text-align:center;
 }
 
+#navigatepic{
+  align-items: center;
+  width:50%;
+  height:100%
+}
 
 
 
@@ -180,10 +185,7 @@ h5{
   
 }
 
-/* 
-  ##Device = Tablets, Ipads (portrait)
-  ##Screen = B/w 768px to 1024px
-*/
+
 
 @media (min-width: 768px) and (max-width: 1024px) {
   
