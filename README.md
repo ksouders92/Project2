@@ -41,10 +41,9 @@ In general, we consider the following folders to fit the MVC pattern:
   *	Images
   * Javascript
   * Various HTML files
-* Views
- * Layouts
+* Views/Layouts
    * Main.handlebars
- * Results.handlebars
+   * Results.handlebars
 * Controllers:	
   * Routes.js
 * Database folder
