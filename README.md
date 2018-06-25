@@ -35,8 +35,7 @@ In general, we consider the following folders to fit the MVC pattern:
 * Models
   * Airport.js
   * Index.js
-* Public folder
-  * Assets
+* Public/Assets
   * CSS
   *	Images
   * Javascript
@@ -46,7 +45,7 @@ In general, we consider the following folders to fit the MVC pattern:
    * Results.handlebars
 * Controllers:	
   * Routes.js
-* Database folder
+* Database 
   * Jawsdb.sql
   * Schema.sql
   * Seeds.sql 
