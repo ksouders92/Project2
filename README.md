@@ -9,8 +9,8 @@
 
 
 ## Project 2 Requirements:
-•    GitHub: deployed to https://github.com/ksouders92/Project2
-•    Heroku: deployed to https://dashboard.heroku.com/apps/frozen-ocean-73432
+* GitHub: deployed to https://github.com/ksouders92/Project2
+* Heroku: deployed to https://dashboard.heroku.com/apps/frozen-ocean-73432
 1. Use a Node and Express Web Server;
 Requirement fulfilled- Using node we used a "node init" and ran "npm install express"  in the terminal to set up the package-lock.json and package.json. In our server.js we required the packages
 1. Be backed by a MySQL Database an ORM (not necessarily Sequelize);
@@ -42,7 +42,7 @@ In general, we consider the following folders to fit the MVC pattern:
   * Javascript
   * Various HTML files
 * Views: 
- *	Layouts
+ * Layouts
   * Main.handlebars
  * Results.handlebars
 * Controllers:	
